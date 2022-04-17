@@ -30,9 +30,10 @@
      text-decoration: none;
      font-size: 30px;
     font-family:Lucida Handwriting;
-     color: #193762;
+     color: #052653;
      font-style: italic;
-     font-weight: bold;
+     font-weight: bolder;
+
 }
 .navbar ul li{
     list-style: none;
@@ -41,16 +42,17 @@
     line-height: 80px;
 }
 .navbar ul li a{
-    color: rgb(166, 173, 204);
+    color: rgb(147, 157, 201);
     text-decoration: none;
     font-size: 20px;
     padding: 6px 13px;
     font-family:Lucida Handwriting;
     font-style: oblique;
 }
+
  .navbar ul li a.active,
  .navbar ul li a:hover{
-     background: #041e3f;
+     background: #011733;
      border-radius: 2px;
  }
  .container .center{
