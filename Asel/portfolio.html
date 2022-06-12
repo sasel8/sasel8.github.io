@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script>
+        $(function () {
+            $.getJSON('data/portfolio.json', function (data) {
+                var tr;
+                for (var i = 0; i < data.length; i++) {
+                    tr = $('<tr/>');
+                    tr.append("<td>" + data[i][0] + "</td>");
+                    tr.append("<td>" + data[i][1] + "</td>");
+                    tr.append("<td>" + data[i][4] + "</td>");
+                    tr.append("<td>" + data[i][5] + "</td>");
+                    tr.append("<td>" + data[i][2] + "</td>");
+                    tr.append("<td>" + data[i][3] + "</td>");
+                    $('table').append(tr);
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+   <table class="table" border="4">
+
+    <thead>
+      <tr>
+        <th> PROJE ADI</th>
+        <th>PROJE TARİHİ</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td  style="border: solid 3px #b10f0f">1.PROJE</td>
+        <td style="border: solid 3px #b10f0f">02.05.2021</td>
+      </tr>
+      <tr>
+        <td  style="border: solid 3px #b10f0f"> 2.PROJE</td>
+        <td style="border: solid 3px #b71515"> 17.06.2021</td>
+      </tr>
+      <tr>
+        <td  style="border: solid 3px #b10f0f"> 3.PROJE</td>
+        <td style="border: solid 3px #d20f0f"> 01.02.2022</td>
+      </tr>
+      <tr>
+        <td  style="border: solid 3px #b10f0f"> 4.PROJE</td>
+        <td style="border: solid 3px #dd0c0c"> 07.22.2022</td>
+      </tr>
+    </tbody>
+
+</table>
+</body>
+
+</html>

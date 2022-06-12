@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON("data/CV.json", function (data) {
+                $("#info tbody").append("<tr><td>" + data.CV.name + "</td></tr>")
+                $("#graduate tbody").append("<tr><td>" + data.CV.graduated + "</td></tr>")
+                $("#techs tbody tr").append("<td>" + data.CV.technologies + "</td>");
+                for (i = 0; i < data.CV.projects.length; i++) {
+                    var tblRow = "<tr>"
+                        + "<td>" + data.CV.projects[i].projectname + "</td>"
+                        + "<td>" + data.CV.projects[i].projecttype + "</td>"
+                        + "<td>" + data.CV.projects[i].projectstartdate + "</td>"
+                        + "<td>" + data.CV.projects[i].projectenddate + "</td>"
+                        + "<td>" + data.CV.projects[i].projectdescription + "</td>"
+                        + "<td>" + data.CV.projects[i].projectlink + "</td>"
+                        + "</tr>"
+                    $("#projects tbody").append(tblRow)
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <h1><mark>AD:</mark>  ASEL BİLDİK</h1>
+    <table id="info">
+        <tbody></tbody>
+    </table>
+
+    <h1><mark>OKUL:</mark>  İNÖNÜ ÜNİVERSİTESİ</h1>
+    <table id="info">
+        <tbody></tbody>
+    </table>
+    <h1><mark>MEZUNİYET:</mark>  2024</h1>
+    <table id="graduate">
+        <tbody></tbody>
+    </table>
+
+    <h1><mark>BİLDİĞİM TEKNOLOJİLER:</mark>YAPAY ZEKA</h1>
+    <table id="techs">
+        <tbody>
+            <tr></tr>
+        </tbody>
+    </table>
+
+    <h1><mark>ÇALIŞTIĞIM PROJELER:</mark>WEB SİTESİ GELİSTİRME</h1>
+
+   
+
+    <a href="#">CV İndir</a>
+
+</body>
+
+</html>
