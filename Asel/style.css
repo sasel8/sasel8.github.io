@@ -10,25 +10,11 @@
 }
 
 .responsiveimage {
-  width: 10%;
+  width: 50px;
   height: auto;
   margin: 30px;
 }
 h1{
-  color:rgb(255, 51, 0);
- font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-footer{
-  background-color:rgb(255, 255, 255);
-}
-.nav-link{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: black;
-}
-.container-fluid{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.table{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: brown;
+  color: rgb(181, 19, 19);
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
